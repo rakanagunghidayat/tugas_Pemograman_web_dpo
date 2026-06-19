@@ -7,7 +7,7 @@ if (!isset($_SESSION['login'])) { header("location: index.php"); exit; }
 $pangkat = isset($_SESSION['pangkat']) ? $_SESSION['pangkat'] : 'Letnan';
 $nama_petugas = isset($_SESSION['nama_petugas']) ? $_SESSION['nama_petugas'] : 'Penyidik';
 
-// Gabungkan pangkat dan nama untuk ditampilkan di navbar (Misal: "Aiptu Abyan")
+// Gabungkan pangkat dan nama untuk ditampilkan di navbar
 $penyidik = $pangkat . " " . $nama_petugas;
 ?>
 <!DOCTYPE html>
